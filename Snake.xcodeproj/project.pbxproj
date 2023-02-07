@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		010EE2EB2751754200B67089 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010EE2EA2751754200B67089 /* BoardViewModel.swift */; };
 		010EE2ED2751CCB100B67089 /* AI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 010EE2EC2751CCB100B67089 /* AI.swift */; };
+		01790B2C2991F1A000E4F1BC /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01790B2B2991F1A000E4F1BC /* Snake.swift */; };
 		01A6AB112741D5DD00D8A18D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB102741D5DD00D8A18D /* AppDelegate.swift */; };
 		01A6AB132741D5DD00D8A18D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB122741D5DD00D8A18D /* SceneDelegate.swift */; };
 		01A6AB152741D5DD00D8A18D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01A6AB142741D5DD00D8A18D /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 /* Begin PBXFileReference section */
 		010EE2EA2751754200B67089 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
 		010EE2EC2751CCB100B67089 /* AI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AI.swift; sourceTree = "<group>"; };
+		01790B2B2991F1A000E4F1BC /* Snake.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
 		01A6AB0D2741D5DD00D8A18D /* Snake.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Snake.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		01A6AB102741D5DD00D8A18D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		01A6AB122741D5DD00D8A18D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +117,7 @@
 				010EE2EC2751CCB100B67089 /* AI.swift */,
 				01A6AB442741D9B400D8A18D /* SquareView.swift */,
 				010EE2EA2751754200B67089 /* BoardViewModel.swift */,
+				01790B2B2991F1A000E4F1BC /* Snake.swift */,
 				01A6AB192741D5DE00D8A18D /* Assets.xcassets */,
 				01A6AB1B2741D5DE00D8A18D /* LaunchScreen.storyboard */,
 				01A6AB1E2741D5DE00D8A18D /* Info.plist */,
@@ -277,6 +280,7 @@
 				010EE2ED2751CCB100B67089 /* AI.swift in Sources */,
 				01A6AB132741D5DD00D8A18D /* SceneDelegate.swift in Sources */,
 				010EE2EB2751754200B67089 /* BoardViewModel.swift in Sources */,
+				01790B2C2991F1A000E4F1BC /* Snake.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

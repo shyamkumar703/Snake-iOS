@@ -15,24 +15,6 @@ class AI {
     init() {}
     
     func getMove(completion: @escaping (Move) -> Void) {
-//        var move = Move.right
-//        var moveReward: Double = 0
-//        if head == nil {
-//            if let head = model?.snake.first {
-//                let moves = Move.allCases.map({checkDirection(square: head, move: $0)}).sorted(by: {$0.1 > $1.1})
-//                if let bestMove = moves.first {
-//                    move = bestMove.0
-//                    moveReward = bestMove.1
-//                }
-//            }
-//        }
-//
-//        if iterations ==
-//
-//        return Move.right
-        
-//        let modelCopy = model?.copy() as! BoardViewModel
-        
         if let head = model?.snake.first {
             let moves = Move.allCases
             

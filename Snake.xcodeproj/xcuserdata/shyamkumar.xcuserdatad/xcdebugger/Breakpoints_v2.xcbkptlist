@@ -7,239 +7,32 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3E71BD25-C0BA-4075-A80A-E639C7037207"
+            uuid = "5D692A4F-8F91-424B-89C4-4B5531D2FA2F"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Snake/BoardView.swift"
+            filePath = "Snake/Snake.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "170"
-            endingLineNumber = "170"
-            landmarkName = "moveSnake(fromSquare:toSquare:)"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "makeMove(newMove:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EFAF715D-7155-4B80-A1FA-E8B466FEDB85"
-            shouldBeEnabled = "No"
+            uuid = "FE061F4C-DF35-4A11-9E85-685FE6C5B746"
+            shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
+            filePath = "Snake/Snake.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
-            landmarkName = "getMove(completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "32A88AF3-DDFD-437B-A39C-50DB10A302F2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "67"
-            endingLineNumber = "67"
-            landmarkName = "getRewardForMove(head:iterations:reward:model:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "8CD53400-48D7-42EF-9BAC-E967ED1F19C2"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "checkDirection(square:move:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C7D705A1-9A39-43FE-B0A8-33673C056102"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "111"
-            endingLineNumber = "111"
-            landmarkName = "checkDirection(square:move:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "145994EC-BA48-4CA3-A969-8632BD8F3F9F"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "116"
-            endingLineNumber = "116"
-            landmarkName = "checkDirection(square:move:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "BE91B448-ABFC-4083-B3A5-BDFFA3F03078"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "121"
-            endingLineNumber = "121"
-            landmarkName = "checkDirection(square:move:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "4FCF0BCB-F223-4D2B-87C0-27D6B645D69A"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/AI.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
-            landmarkName = "getMove(completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4FCF0BCB-F223-4D2B-87C0-27D6B645D69A - 2a052e22c8012fd6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snake.AI.getMove(completion: (Snake.Move) -&gt; ()) -&gt; ()"
-                  moduleName = "Snake"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shyamkumar/Desktop/Snake/Snake/AI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "1547">
-               </Location>
-               <Location
-                  uuid = "4FCF0BCB-F223-4D2B-87C0-27D6B645D69A - 2a052e22c8012fd6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snake.AI.getMove(completion: (Snake.Move) -&gt; ()) -&gt; ()"
-                  moduleName = "Snake"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shyamkumar/Desktop/Snake/Snake/AI.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "45"
-                  endingLineNumber = "45"
-                  offsetFromSymbolStart = "2772">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "C30D18B0-2AA2-4387-A7F3-610AAB68AF28"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/BoardViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "90"
-            endingLineNumber = "90"
-            landmarkName = "getSquare(coordinates:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "C30D18B0-2AA2-4387-A7F3-610AAB68AF28 - 26ed93059c869e6"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Snake.BoardViewModel.getSquare(coordinates: (Swift.Int, Swift.Int)) -&gt; Swift.Optional&lt;Snake.SquareView&gt;"
-                  moduleName = "Snake"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shyamkumar/Desktop/Snake/Snake/BoardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "63">
-               </Location>
-               <Location
-                  uuid = "C30D18B0-2AA2-4387-A7F3-610AAB68AF28 - a7c8abe0b84f101e"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (__C.UIView) -&gt; Swift.Bool in Snake.BoardViewModel.getSquare(coordinates: (Swift.Int, Swift.Int)) -&gt; Swift.Optional&lt;Snake.SquareView&gt;"
-                  moduleName = "Snake"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shyamkumar/Desktop/Snake/Snake/BoardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "35">
-               </Location>
-               <Location
-                  uuid = "C30D18B0-2AA2-4387-A7F3-610AAB68AF28 - 17d7c55a3c97b4f2"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #2 (__C.UIView) -&gt; Swift.Optional&lt;__C.UIStackView&gt; in Snake.BoardViewModel.getSquare(coordinates: (Swift.Int, Swift.Int)) -&gt; Swift.Optional&lt;Snake.SquareView&gt;"
-                  moduleName = "Snake"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shyamkumar/Desktop/Snake/Snake/BoardViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "85"
-                  endingLineNumber = "85"
-                  offsetFromSymbolStart = "39">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "DCE1A9EE-681C-47AF-9A4E-55BB7D272C88"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Snake/BoardViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "92"
-            endingLineNumber = "92"
-            landmarkName = "getSquare(coordinates:)"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "makeMove(newMove:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

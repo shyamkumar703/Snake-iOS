@@ -39,54 +39,26 @@ class BoardViewModel {
     }
     var delegate: BoardViewDelegate? = nil
     
-    var currentMove: Move = .right
-    
-    var snake: [(Int, Int)] = []
-    
-    var snakeQueue: [[Move]] = [[], Array.init(repeating: .right, count: 1), Array.init(repeating: .right, count: 2),  Array.init(repeating: .right, count: 3)]
+    var snake = Snake()
     
     var verticalStackSubviews: [UIView] = []
     
     init(squares: [SquareViewModel] = [], wHPair: (CGFloat, CGFloat) = (0, 0)) {
         self.squares = squares
         self.wHPair = wHPair
+        snake.delegate = self
     }
     
     func restart() {
         squares = []
-        currentMove = .right
-        snake = []
-        snakeQueue = [[], Array.init(repeating: .right, count: 1), Array.init(repeating: .right, count: 2),  Array.init(repeating: .right, count: 3)]
+        snake.reset()
     }
     
     func makeMove(newMove: Move? = nil) {
-        if newMove == nil {
-            for index in 0..<snake.count {
-                snake[index] = move(square: snake[index], move: currentMove)
-            }
-            return
-        }
-        
-        for index in 0..<snakeQueue.count {
-            snakeQueue[index].append((newMove ?? currentMove))
-        }
-        
-        for index in 0..<snake.count {
-            if let nextMove = snakeQueue[index].first {
-                snake[index] = move(square: snake[index], move: nextMove)
-                snakeQueue[index].remove(at: 0)
-            }
-        }
-        
-        currentMove = newMove ?? currentMove
+        snake.makeMove(newMove: newMove)
     }
     
     func getSquare(coordinates: (Int, Int)) -> SquareView? {
-//        if coordinates.0 < 0 || coordinates.1 < 0 {
-//            let view = SquareView()
-//            view.model.type = .obstacle
-//            return view
-//        }
         if let stack = verticalStackSubviews.filter({ $0.tag == coordinates.0 }).map({ $0 as? UIStackView}).first {
             if let square = stack?.arrangedSubviews.filter({ $0.tag == coordinates.1 }).map({$0 as? SquareView}).first {
                 return square
@@ -119,28 +91,7 @@ extension BoardViewModel {
     }
     
     func addSnakePart() {
-        var newPartCoords = (0, 0)
-        if let lastPart = snake.last,
-           let queue = snakeQueue.last,
-           let move = queue.first {
-            switch move {
-            case .up:
-                newPartCoords = (lastPart.0 + 1, lastPart.1)
-            case .down:
-                newPartCoords = (lastPart.0 - 1, lastPart.1)
-            case .right:
-                newPartCoords = (lastPart.0, lastPart.1 - 1)
-            case .left:
-                newPartCoords = (lastPart.0, lastPart.1 + 1)
-            }
-            
-            if let square = delegate?.getSquare(coordinates: newPartCoords) {
-                let newPartQueue = [move] + queue
-                snakeQueue.append(newPartQueue)
-                snake.append(newPartCoords)
-                square.model.type = .snake
-            }
-        }
+        snake.addPart()
     }
 }
 
@@ -148,13 +99,16 @@ extension BoardViewModel: NSCopying {
     func copy(with zone: NSZone? = nil) -> Any {
         let copy = BoardViewModel()
         copy.squares = squares
-        copy.currentMove = currentMove
-        copy.snake = snake
-        copy.snakeQueue = snakeQueue
+        copy.snake = snake.copy() as! Snake
         copy.reward = reward
         copy.wHPair = wHPair
         copy.verticalStackSubviews = verticalStackSubviews
-//        copy.delegate = delegate?.copy()
         return copy
+    }
+}
+
+extension BoardViewModel: SnakeDelegate {
+    func moveSnake(fromSquare: (Int, Int), toSquare: (Int, Int)) {
+        delegate?.moveSnake(fromSquare: fromSquare, toSquare: toSquare)
     }
 }

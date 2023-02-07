@@ -122,8 +122,6 @@ class BoardView: UIView, BoardViewDelegate {
         model.verticalStackSubviews = verticalStack.arrangedSubviews
         
         timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(makeMove), userInfo: nil, repeats: true)
-//        spawnObstacles(axis: .horizontal, number: 5)
-//        spawnObstacles(axis: .vertical, number: 5)
         spawnFood()
     }
     
@@ -134,12 +132,12 @@ class BoardView: UIView, BoardViewDelegate {
         }
         
         let userMove = delegate?.currentMove
-        aiInstance.getMove { [self] aiMove in
-            if ai {
-                model.makeMove(newMove: aiMove)
-            } else {
-                model.makeMove(newMove: userMove)
+        if ai {
+            aiInstance.getMove { [weak self] move in
+                self?.model.makeMove(newMove: move)
             }
+        } else {
+            model.makeMove(newMove: userMove)
         }
     }
 }
